@@ -1,0 +1,321 @@
+body {
+  background: linear-gradient(to left, #b57fe7, #977ce1);
+  min-width: 1500px;
+  margin: 0px;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left, #977ce1, #d1d2f9);
+}
+
+.title {
+  margin-left: -350px;
+}
+
+.title h1 {
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+}
+
+.logo img {
+  max-width: 25%;
+  max-height: 25%;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #3d4751;
+  flex-grow: 4;
+  min-height: 100%;
+  min-width: 200px;
+}
+
+
+.sidebar a {
+  text-decoration: none;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16pt;
+  margin: 10px;
+  color: white;
+  line-height: 4em;
+}
+
+.mini:hover {
+  transition: 1s;
+  background-color: #d1d2f9;
+}
+
+/* The side navigation menu */
+
+#mySidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(61,71,81);
+  overflow-y: scroll;
+  transition: 0.5s;
+  padding-top: 60px;
+  }
+
+  /* Scrollbar */
+
+#mySidenav::-webkit-scrollbar {
+    width: 12px;
+    background-color: #b57fe7;
+
+}
+
+#mySidenav::-webkit-scrollbar-track {
+	background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+#mySidenav::-webkit-scrollbar-thumb {
+	background: linear-gradient(to bottom, #6E48AA, #9D50BB);
+  border-radius: 10px;
+}
+
+  /* Scrollbar end */
+
+  .sonnet-index {
+    margin-bottom: 75px;
+  }
+
+  .sonnet-index a {
+    padding: 2px;
+    text-decoration: none;
+    font-size: 12pt;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    display: inline-block;
+    line-height: 2em;
+  }
+
+  .sonnet-index a:hover {
+    background-color: white;
+    color: #977ce1;
+    transition: 0.3s;
+  }
+
+  .closebutton {
+    padding: 10px;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* off-canvas push */
+  #main {
+    transition: margin-left .5s;
+  }
+
+
+
+.dashboard {
+  background: #9D50BB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("images/shakespearebackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 28;
+  max-width: 100%;
+}
+
+.dashboard h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 48px;
+  color: #FFFFFF;
+}
+
+.dashboard p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.top-row, .bottom-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.sonnet-container, .infographic-container, .blurb-container, .blog-container {
+flex-grow: 1;
+background-color: rgba(61,71,81,0.5);
+border-radius: 10px 10px 0px 0px;
+box-shadow:  5px 5px 10px 10px #3a3a3a;
+margin-left: 20px;
+margin-right: 60px;
+}
+
+.blog-container p, h1 {
+  margin: 20px;
+}
+
+#about-us-padding {
+  padding-bottom: 350px;
+}
+
+#blog-padding {
+  padding-bottom: 350px;
+}
+
+.infographic-container {
+  margin-top: 20px;
+}
+
+.infographic img {
+  width: 100%;
+}
+
+.mini-icon {
+  font-size: 48px;
+  color: white;
+}
+
+.sonnet-container h2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 24pt;
+  color: white;
+  margin-left: 20px;
+}
+
+.sonnet-container p, .modern-version-container p {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+  color: white;
+  line-height: 2em;
+}
+
+.search-bar {
+  flex-grow: 1;
+  background-blend-mode: overlay;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.search-bar input[type=text] {
+    background-color: rgba(61,71,81,0.5);
+    background-image: url('images/searchicon.png');
+    background-position: 5px 10px;
+    padding: 40px 20px 0px 80px;
+    background-repeat: no-repeat;
+    align-items: baseline;
+    border: none;
+    border-bottom: 4px white solid;
+    font-family: 'Montserrat', san-serif;
+    font-size: 32pt;
+    color: white;
+    margin-top: 25%;
+    width: 75%;
+  }
+
+  .search-bar input[type=text]::placeholder {
+      font-family:  'Montserrat', sans-serif;
+      font-size: 32pt;
+      color: white;
+    }
+
+    .search-bar input[type=text]:focus
+    {
+      outline: none;
+    }
+
+.randomiser {
+  margin-top: 20px;
+}
+
+
+.randomiser button {
+    background-image: url("images/sonnetlylogo2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #d1d2f9;
+    border-radius: 50%;
+    border: 3px outset gray;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.randomiser button:hover {
+  background-color: #3d4751;
+  border: none;
+}
+
+    .modern-version-container {
+    flex-grow: 1;
+    background-color: rgba(61,71,81,0.5);
+    box-shadow:  5px 5px 10px 10px #3a3a3a;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 50px;
+    border-radius: 10px 10px 0px 0px;
+    }
+
+
+    .video-container {
+      margin-top: 50px;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .sub-title {
+      border-radius: 10px 10px 0px 0px;
+      background-color: #3d4751;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .sub-title h2 {
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .heading {
+      margin-left: 5px;
+    }
+
+    #video {
+      width: 560px;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background: linear-gradient(to left, #977ce1, #d1d2f9);
+      max-width: 100%;
+      margin-top: 20px;
+      padding: 50px;
+    }
+
+    .social-media-icons {
+      margin-right: 20px;
+    }
+
+    .social-media-icons h2 {
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+    }
